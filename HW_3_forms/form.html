@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
+    <title>Заявки</title>
+     
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <a href="index.html">Главная</p></a>
+            <a href="katalog.html">Каталог товаров</p></a>               
+            <a href="#">Корзина</p></a>
+            <a href="form.html">Заявки</p></a>
+        </nav>
+    </header>
+
+    <aside>
+        <h2>Личный кабинет</h2>
+    </aside>
+    <main>
+        <section>
+            <ul>                
+                <li><img src="./img/banner.jpg" width="100%" height="250" alt="banner"></li>          
+            </ul>
+        </section>
+    </main> 
+  
+    <div class="form-wrap">
+        <div class="profile">
+          <h1>Отправить заявку</h1>
+        </div>
+        <form>
+          <div>
+            <label for="name">ФИО</label>
+            <input type="text" name="name" required>
+          </div>         
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" required>
+          </div>
+          <div>
+            <label for="branch">Подразделение</label>
+            <select name="branch">
+              <option>Выберите подразделение</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option> 
+              <option value="ЭПРОН">ЭПРОН</option> 
+              <option value="Нововоронеж">Нововоронеж</option>
+              <option value="Глазов">Глазов</option> 
+              <option value="Северск">Северск</option> 
+              <option value="Мурманск">Мурманск</option>
+              <option value="Владивосток">Владивосток</option>   
+            </select> 
+            <div>
+               <label>Заявка<input type="text" required></label>
+            </div>
+            <div class="select-arrow"></div> 
+          </div> 
+          <button type="submit">Отправить</button> 
+        </form> 
+      </div>
+    <div>
+        <a href="#menu">К меню</a>
+    </div>
+
+    <footer>
+        Служба поддержки: info@mail.ru
+    </footer>
+</body>
+</html>
