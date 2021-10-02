@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" type="text/css"/>
+    <meta charset="UTF-8">    
     <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
-    <title>Заявки</title>
+    <title>Регистрация</title>
      
 </head>
 <body>
@@ -20,8 +17,39 @@
     </header>
 
     <aside>
-        <h2>Личный кабинет</h2>
+        <h2>Регистрация</h2>
     </aside>
+    <form action="#" method="post">
+      <div>
+        <label for="name">Имя</label>
+        <input id="name" type="text" placeholder="Имя" name="name">
+      </div>
+      <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="email" name="email" required>
+      </div>
+      <div>
+          <label for="password">Пароль</label>
+          <input id="password" type="password" placeholder="Пароль" required minlength="8" name="password" required>
+      </div>
+      <div>
+        <label for="age">Возраст</label>
+        <input id="age" type="number" placeholder="Возраст" name="age" required>
+      </div>
+      <div>
+        <label for="phone">Номер телефона</label>
+        <input id="phone" type="text" placeholder="89001112233" name="phone" min="7" max="11">
+      </div>
+      <div>
+          <label>
+              Запомнить             
+              <input type="checkbox" name="member" checked value="member">
+          </label>          
+      </div>
+      <div>
+          <input type="submit" value="Регистрация">
+      </div>
+  </form>
     <main>
         <section>
             <ul>                
@@ -30,22 +58,22 @@
         </section>
     </main> 
   
-    <div class="form-wrap">
-        <div class="profile">
+    <div>
+        <div>
           <h1>Отправить заявку</h1>
         </div>
         <form>
           <div>
             <label for="name">ФИО</label>
-            <input type="text" name="name" required>
+            <input id="name" type="text" name="name" required>
           </div>         
           <div>
             <label for="email">E-mail</label>
-            <input type="email" name="email" required>
+            <input id="email" type="email" name="email" required>
           </div>
           <div>
             <label for="branch">Подразделение</label>
-            <select name="branch">
+            <select id="branch" name="branch">
               <option>Выберите подразделение</option>
               <option value="Санкт-Петербург">Санкт-Петербург</option> 
               <option value="ЭПРОН">ЭПРОН</option> 
@@ -56,11 +84,10 @@
               <option value="Владивосток">Владивосток</option>   
             </select> 
             <div>
-               <label>Заявка<input type="text" required></label>
-            </div>
-            <div class="select-arrow"></div> 
-          </div> 
-          <button type="submit">Отправить</button> 
+               <label for="list">Заявка</label>
+               <textarea id="list" name="list"></textarea>
+            </div>            
+          <input type="submit" value="Отправить">
         </form> 
       </div>
     <div>
