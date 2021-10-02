@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">         
+    <title>Подбор квартир в Санкт-Петербурге</title>
+     
+</head>
+<body>
+        <h2>Подбор квартир в Санкт-Петербурге</h2>
+    </aside>
+    <form action="#" method="post">      
+        <div>
+          <label for="areal">Район</label>
+          <select id="areal" name="areal">
+            <option>Выберите район</option>
+            <option value="Центральный">Центральный</option> 
+            <option value="Приморский">Приморский</option> 
+            <option value="Выборгский">Выборгский</option>
+            <option value="Московский">Московский</option>               
+          </select> 
+        <div>
+        <div>
+            <h4>Количество комнат</h4>
+            <label>
+                Студия
+                <input type="checkbox" name="additional[]" value="studio">
+            </label>
+            <label>
+                1
+                <input type="checkbox" name="additional[]" value="one">
+            </label>
+            <label>
+                2
+                <input type="checkbox" name="additional[]" value="two">
+            </label>
+            <label>
+                3
+              <input type="checkbox" name="additional[]" value="three">
+          </label>
+          <label>
+                4
+            <input type="checkbox" name="additional[]" value="four">
+        </label>        
+        </div>
+        
+        <div>
+          <label for="year">Год сдачи дома</label>
+          <select id="year" name="year">
+            <option>не важно</option>
+            <option value="2021">Четвертый квартал 2021</option> 
+            <option value="1_2022">Первый квартал 2022</option> 
+            <option value="2_2022">Второй квартал 2022</option>
+            <option value="3_2022">Третий квартал 2022</option>
+            <option value="4_2022">Четвертый квартал 2022</option>
+            <option value="2023">2023</option>               
+          </select> 
+        <div>
+        
+         <div>
+            <label for="price">Стоимость (млн. руб.)</label> 
+            от 
+            <input id="price" type="text" placeholder="2" name="price" minlength="2" maxlength="30">
+            до 
+            <input id="price" type="text" placeholder="30" name="price" minlength="2" maxlength="30">
+        </div>
+        <div>
+          <label for="metrag">Площадь</label>         
+          <input id="metrag" type="number" placeholder="20" name="metrag" min="20" max="200" step="5">
+      </div>
+
+      <div>
+        <label>             
+            С отделкой
+            <input type="radio" name="view_1" value="view_1">
+        </label> 
+        <label>
+            Без отделки
+            <input type="radio" name="view_2" value="view_2">
+        </label>                  
+      </div>
+
+      <div>
+        <label>           
+            С террасой
+            <input type="radio" name="var_1" value="first">
+        </label> 
+        <label>
+            Без террасы
+            <input type="radio" name="var_2" value="second">
+        </label>                  
+      </div>
+
+      <div>
+        <h4>Выбор класса</h4>
+        <label>
+            Бизнес-класс
+            <input type="checkbox" name="additional[]" value="biz">
+        </label>
+        <label>
+            Премиум
+            <input type="checkbox" name="additional[]" value="premium">
+        </label>
+        <label>
+            Deluxe
+            <input type="checkbox" name="additional[]" value="deluxe">
+        </label>
+        <label>
+            Комфорт
+          <input type="checkbox" name="additional[]" value="komfort">
+      </label>
+      <label>
+            Эконом
+        <input type="checkbox" name="additional[]" value="econom">
+    </label>        
+    </div>
+    <div>
+      <label for="price">Этаж</label> 
+      от 
+      <input id="price" type="text" placeholder="1" name="price" minlength="2" maxlength="30">
+      до 
+      <input id="price" type="text" placeholder="30" name="price" minlength="2" maxlength="30">
+      <label>
+        Не первый
+      <input type="checkbox" name="additional[]" value="not_first">
+      </label>
+      <label>
+        Не последний
+      <input type="checkbox" name="additional[]" value="not_end">
+      </label>
+  </div>    
+      <div>
+          <input type="submit" value="Подобрать">
+      </div>
+  </form>  
+   
+</body>
+</html>
