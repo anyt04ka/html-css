@@ -1,0 +1,144 @@
+
+
+form {    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color:#123C69;
+    padding: 2rem;
+    background-image: url(../img/fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+    height: 443px;
+}
+
+form div {    
+    width: 20%;
+    position: relative;
+    margin:0 auto;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.entrance {
+    justify-content: center;
+    align-items: center;
+    text-align: center;      
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(2, 94, 161);
+}
+
+input[type="text"], 
+input[type="password"],  
+.login-icon,
+.pwd-icon {
+    font-size: 1rem;
+    color: rgb(2, 94, 161);
+}
+
+input::-webkit-input-placeholder {
+    color: #123C69;
+}
+
+input::-moz-placeholder {
+    color: #123C69;
+}
+
+input::-ms-input-placeholder {
+    color: #123C69;
+}
+
+input[type="text"],
+input[type="password"] {
+    border-style: none;
+    outline-style: none;
+    background-color: transparent;
+    border-bottom: 2px solid #123C69;
+    border-radius: 0;
+    padding: 5px 0 5px 40px;
+}
+
+.pwd-icon,
+.login-icon {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    padding-left: 0;
+    border-bottom-color: red;
+    padding-right: 40px;
+}
+
+input[type="text"]:focus + .login-icon,
+input[type="password"]:focus + .pwd-icon {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+    display: flex;
+    flex: 30%;
+}
+
+.remember-label:before {
+    content: "\2713";
+    display: inline-block; 
+    position: relative; 
+    text-align: center; 
+    width: 25px; 
+    height: 25px; 
+    cursor: pointer;     
+    font-size: 0.8rem;
+    vertical-align: bottom;
+    border: 2px solid red;
+    color:red;
+    border-radius: 2px;
+    margin: 12px 10px 0 0;    
+}
+
+input[type=checkbox]:checked + label:before {
+    content: " ";    
+     
+}
+
+input[type=submit] { 
+    width: 80%;   
+    position: relative;
+    margin:0 auto;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center; 
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(2, 94, 161);
+    text-align: center; 
+    border: 0;   
+    border-radius: 0;
+    padding: 5px;
+}
+
+.reg a{     
+    width: 80%;  
+    position: relative;
+    margin:0 auto;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center; 
+    bottom: -10px;
+    text-align: center;  
+    text-decoration: none;    
+    font-size: 1rem;
+    color: rgb(2, 94, 161);
+}

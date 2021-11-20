@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="css/style.css">   
+    <title>Заявки</title>
+     
+</head>
+<body>
+  <header>   
+      <span class="logo">
+          <a href="index.html"><img src="./img/logo.jpg"></a>
+        </span>
+          <nav class="container" id="menu">            
+              <a href="index.html">Главная</a>
+              <a href="katalog.html">Каталог товаров</a>               
+              <a href="#">Корзина</a>
+              <a href="form.html">Заявки</a>
+              <a class="registration" href="auth.html">Личный кабинет</a>
+          </nav>
+  </header>
+
+      
+    
+      <form>
+        <div>
+          <span class="entrance">Вход в личный кабинет</span>
+      </div>   
+        <div>
+          <label for="name">ФИО</label>
+          <input id="name" type="text" name="name" required>
+        </div>         
+        <div>
+          <label for="email">E-mail</label>
+          <input id="email" type="email" name="email" required>
+        </div>
+        <div>
+          <label for="branch">Подразделение</label>
+          <select id="branch" name="branch">
+            <option>Выберите подразделение</option>
+            <option value="Санкт-Петербург">Санкт-Петербург</option> 
+            <option value="ЭПРОН">ЭПРОН</option> 
+            <option value="Нововоронеж">Нововоронеж</option>
+            <option value="Глазов">Глазов</option> 
+            <option value="Северск">Северск</option> 
+            <option value="Мурманск">Мурманск</option>
+            <option value="Владивосток">Владивосток</option>   
+          </select> 
+        </div>
+          <div>
+             <label for="list">Заявка</label>
+             <textarea id="list" name="list"></textarea>
+          </div>            
+        <div>            
+          <input type="submit" value="Отправить">
+        </div>
+      </form> 
+    </div>
+  
+  
+  <footer class="it">
+      Служба поддержки: info@mail.ru
+  </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">   
+    <title>Регистрация</title>     
+</head>
+<body>
+    <header>   
+        <span class="logo">
+            <a href="index.html"><img src="./img/logo.jpg"></a>
+          </span>
+            <nav class="container" id="menu">            
+                <a href="index.html">Главная</a>
+                <a href="katalog.html">Каталог товаров</a>               
+                <a href="#">Корзина</a>
+                <a href="form.html">Заявки</a>
+                <a class="registration" href="auth.html">Личный кабинет</a>
+            </nav> 
+    </header>
+
+    <form action="#" method="post" >  
+            <div>
+                <span class="entrance">Вход в личный кабинет</span>
+            </div>       
+            <div>
+                <input id="login" type="text" placeholder="логин" required name="login">
+                <span class="login-icon"><i class="far fa-user"></i></span>
+            </div>
+            <div>
+                <input id="password" type="password" placeholder="пароль" required minlength="6" name="password">
+                <span class="pwd-icon"><i class="fas fa-unlock-alt"></i></span>
+            </div>
+            <div>
+                <label>
+                    Запомнить  
+                <input id="remember" type="checkbox" name="remember" checked value="remember">
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Войти">
+                </div>
+            <div>
+                <span class="reg"><a href="registrat.html">Зарегистрироваться</a></span>
+            </div>
+          
+        </form>
+   
+
+     
+        
+        <footer class="it">
+            Служба поддержки: info@mail.ru
+        </footer>
+       
+ 
+  </body>
+  </html>
